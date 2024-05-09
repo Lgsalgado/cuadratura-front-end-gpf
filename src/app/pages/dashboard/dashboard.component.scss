@@ -1,0 +1,12 @@
+.carousel-item {
+  height: 500px; /* ajusta este valor según tus necesidades */
+  overflow: hidden; /* para recortar cualquier parte de la imagen que exceda el alto fijo */
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: auto; /* Esto centra la imagen horizontalmente */
+}

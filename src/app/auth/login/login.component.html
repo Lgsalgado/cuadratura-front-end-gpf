@@ -1,0 +1,74 @@
+
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="assets/dist/img/credit/fondoLogin.jpg"
+               class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <!-- Username input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="username" class="form-control form-control-lg"
+                     formControlName="username" placeholder="Ingrese su usuario" />
+              <label class="form-label" for="username">Username</label>
+            </div>
+
+            <!-- Password input -->
+            <div data-mdb-input-init class="form-outline mb-3">
+              <input type="password" id="password" class="form-control form-control-lg"
+                     formControlName="password" placeholder="Ingrese su contraseña" />
+              <label class="form-label" for="password">Password</label>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Recuérdame
+                </label>
+              </div>
+              <a href="#!" class="text-body">Olvido su clave?</a>
+            </div>
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="submit" data-mdb-button-init data-mdb-ripple-init class="custom-bg btn-lg"
+                      style="padding-left: 2.5rem; padding-right: 2.5rem;" >Iniciar sesión</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">No tienes cuenta <a href="#!"
+                                                                                class="link-danger">Regístrate</a></p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 custom-bg">
+      <!-- Copyright -->
+      <div class="text-white mb-3 mb-md-0">
+        Copyright© 2024 Corporación GPF. Derechos reservados.
+      </div>
+      <!-- Copyright -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/profile.php?id=100082994509744" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/CorporacionGPF" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/corporaci%C3%B3n-gpf/mycompany/" class="text-white">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </div>
+
+  </section>
+  <!-- Pills content -->
+
+
+
