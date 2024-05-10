@@ -18,7 +18,6 @@ export class TokenService {
   handleData(token: string, menu:string) {
     localStorage.setItem('auth_token', token);
     localStorage.setItem('menu',menu)
-
   }
 
   getToken() {

@@ -25,7 +25,7 @@
     <pre>From: {{ fromDate | json }} </pre>
     <pre>To: {{ toDate | json }} </pre>
     <br>
-    <button class="btn btn-outline-primary" (click)="enviarListaConPausa()" > Buscar ordenes
+    <button class="btn btn-outline-primary" (click)="obtenerOrdenesError(fromDate,toDate)" > Buscar ordenes
       <ng-icon name="heroWifi"></ng-icon>
     </button>
     <div *ngIf="dataSource != undefined">

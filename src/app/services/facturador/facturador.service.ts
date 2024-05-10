@@ -60,8 +60,8 @@ export class FacturadorService {
   }
   searchOrdersError(fechaInicio: string, fechaFin: string): Observable<any>{
     const requestBody = {
-      fechaInicio: fechaInicio,
-      fechaFin: fechaFin
+      startDate: fechaInicio,
+      endDate: fechaFin
     };
     return this.http.post(this.api+'searchOrdersError',requestBody)
   }

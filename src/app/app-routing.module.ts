@@ -21,7 +21,7 @@ const routes:Routes=[
   {
     path: '',
     component:AppLayoutComponent,
-    //canActivate:[AuthGuard],
+    canActivate:[AuthGuard],
     children:[
       {
         path:'dashboard/facturador', component:FacturadorComponent
